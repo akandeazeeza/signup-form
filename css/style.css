@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/image/photo.avif);
+    display: flex;
+}
+
+
+img {
+    height: 4rem;
+    width: 3rem;
+}
+
+.logo {
+    display: flex;
+    padding: 65px;
+    background-color: rgb(167, 164, 164);
+    margin-top: 70px;
+    height: 4rem;
+
+}
+
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.Signup {
+    padding: 30px;
+    margin: 30px;
+    background-color: white;
+    height: 600px;
+}
+
+form {
+    border: 5px solid whitesmoke;
+    padding: 20px;
+}
+
+input:focus {
+    border: 4px solid #6381bb;
+    border-radius: 4px;
+}
+
+#password:user-invalid {
+    border: 4px solid red;
+    border-radius: 4px;
+}
+
+
+button {
+    margin: 25px;
+    width: 200px;
+    height: 40px;
+    background-color: #596d48;
+    color: whitesmoke;
+    border:3px solid #788170;
+    border-radius: 4px;
+}

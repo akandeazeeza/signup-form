@@ -20,46 +20,57 @@
 
         <form action="#" method="get">
             <p>Let's do this!</p>
-            <div>
-                <label for="FirstName">FIRST NAME</label><br>
-                <input type="text"  name="name" required>
-            </div>
-
-            <div>
-                <label for="email">EMAIL</label><br>
-                <input type="email" name="email" required>
-            </div>
-
-            <div>
-                <label for="password">PASSWORD</label><br>
-                <input type="password" name="password" id="password" required>
-            </div>
-
-            
+           <div class="container">
+               <div>
+                  <label for="FirstName">FIRST NAME</label><br>
+                  <input type="text"  name="name"  placeholder="FirstName">
+              </div>
 
                 <div>
-                    <label for="lastname">LAST NAME</label><br>
-                    <input type="text" name="lastname" required>
-                </div>
+                  <label for="lastname">LAST-NAME</label><br>
+                  <input type="lastname" name="lastname" placeholder="lastname" required>
+               </div>
+           </div>
                
+           <div class="container1">
+               <div>
+                   <label for="email">EMAIL</label><br>
+                  <input type="text" name="email" placeholder="myname@example.com" required>
+               </div>
+
+              <div>
+                 <label for="password">PASSWORD</label><br>
+                 <input type="text" name="text" required>
+               </div>
+            </div>
+
+            <div class="container2">
                 <div>
-                    <label for="phoneNO">PHONE NUMBERS</label><br>
-                    <input type="numbers" required>
+                  <label for="phoneNO">PHONE NUMBERS</label><br>
+                    <input type="numbers" placeholder="0123456789" required>
                 </div>
 
                 <div>
-                   <label for="confirm password">CONFIRM PASSWORD</label><br>
-                  <input type="password" name="password" id="password" required>
+                  <label for="confirm password">CONFIRM PASSWORD</label><br>
+                  <input type="text" name="text" id="password" required>
                 </div>
+            </div>
                  
         </form>
 
 
-        <button>Create Account</button>
+        <button id="btn">Create Account</button>
+        <p id="demo"></p>
             
         <p>Already have an account? <a href="log in">log in</a></p>
     </div>
     
     
 </body>
+<script>
+    const btn = document.getElementById("btn");
+    btn.addEventListener("click", () => {
+        document.getElementById("demo").innerHTML = "THANK YOU! <br> Your submission has been received! ";
+    })
+</script>
 </html>

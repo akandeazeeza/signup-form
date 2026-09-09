@@ -40,6 +40,24 @@ form {
     padding: 20px;
 }
 
+.container {
+    display: flex;
+    gap: 10px;
+    margin: 10px 5px;
+}
+
+.container1 {
+    display: flex;
+    gap: 10px;
+    margin: 10px 5px;
+}
+
+.container2 {
+    display: flex;
+    gap: 10px;
+    margin: 10px 5px;
+}
+
 input:focus {
     border: 4px solid #6381bb;
     border-radius: 4px;
@@ -55,8 +73,13 @@ button {
     margin: 25px;
     width: 200px;
     height: 40px;
-    background-color: #596d48;
+    background-color: #855bac;
     color: whitesmoke;
     border:3px solid #788170;
     border-radius: 4px;
+}
+
+button:hover {
+    background-color: green;
+    cursor: pointer;
 }
